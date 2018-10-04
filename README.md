@@ -5,6 +5,7 @@ integer n, the next prime number p after or equal to n, that is, the prime
 number p >= n such that p - n is minimised.*  
 ```
 Initiate a boolean isPrime and initialize with n isPrime is true.
+Have guard clauses for n < 2 and n = 2.
 Initiate a divisor = 2 and allow divisor to go up to n-1.
 n divide divisor;  
  > if remainder is 0 then it is not prime. Update isPrime = false.  
@@ -14,7 +15,7 @@ If sending n as an argument of isPrime gives true, print n.
 If sending n as an argument of isPrime gives false, find closest prime >= n:  
  > increment n by 1 and set it as variable p
  > pass p as an argument of isPrime
- >> If true, print p. If false, repeat with p incremented by 1.
+  >> If true, print p. If false, repeat with p incremented by 1.
 ```
 
 *(b) Argue that your algorithm is correct.*  
