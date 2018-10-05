@@ -15,7 +15,7 @@ If sending n as an argument of isPrime gives true, print n.
 If sending n as an argument of isPrime gives false, find closest prime >= n:  
  > increment n by 1 and set it as variable p
  > pass p as an argument of isPrime
-   >> If true, print p. If false, repeat with p incremented by 1.
+   >> If true, print p. If false, repeat the isPrime(p) step with p incremented by 1.
 ```
 
 *(b) Argue that your algorithm is correct.*  
@@ -34,13 +34,18 @@ Else, it incrementally checks whether the integers above the argument is prime a
 the loops used in your algorithm and estimate roughly how many iterations in
 each loop your algorithm needs for a given number n.*  
 ```
-Given an integer n taken from {-2147483648,...,0,1,2,3...,2147483647}:  
-|Operation      | Run-time      | High-level explanation  |
-| ------------- |:-------------:| -----:|
-| checking inequality | O(1) | Will get back to you |
-| long division of n-digit and m-digit numbers  | O(nm) | Will get back to you |
-| iteration of 1 to n-1 for some natural number n | O(n) | Will get back to you |
+Given an integer n taken from {-2147483648,...,0,1,2,3...,2147483647}:
 
+|       Operation                    |  Time  |        High-level explanation                      |
+|:---------------------------------- |:------:|:-------------------------------------------------- |
+| checking inequality                | O(1)             | I assume we just simply compare two numbers        |
+| adding 1 to a number               | O(1)             | add and carry are both single time unit operations |
+| long division of 2 m-digit numbers | O(m<sup>2</sup>) | Refer to wikipedia; I'm trying to understand it.   |
+
+The best case would be if n <= 2, in which case the algorithm takes 1 time unit.
+The worst case would be if n is an m-digit number, n > 2, such that it is not prime and the next prime is k numbers away. In this case, the complexity would be O(1) + (/floor m/2 /rfloor)O(m<sup>2</sup>) + (m-3)O(1) = O(m<sup>3</sup>+m)
+
+As you can see, I have no idea what I'm doing in this part of the question. However, I did learn more about the Big O notation and learned that algorithms have complexity. I am handing in this homework early because I want to go about learning about how to calculate algorithm complexity without having this homework looming over me.
 ```
 
 # Exercise 1.2
@@ -53,4 +58,6 @@ be encapsulated in a method._
 
 ```
 To view my solution to this, kindly refer to the files in this repository.
+<sup>https://github.com/limcuili</sup>
+
 ```
