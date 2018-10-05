@@ -55,6 +55,4 @@ _Try to use a method (or several ones) other than the main method in your
 program. For this, single out parts of your program, which could naturally
 be encapsulated in a method._
 
-
-To view my solution to this, kindly refer to the files in this repository.
-<sup>https://github.com/limcuili</sup>
+Attached.
