@@ -30,11 +30,11 @@ This is an exhaustive way of checking for prime. The process stops once it finds
 determines that n is not prime. Otherwise, it would have divided n by each integer in {2,...,n-1} and
 determines that there is no divisor, ie. n is only divisible by itself and 1.
 
-The main() method (described in the second half of the described algorithm) now simply has a job of checking
-whether the argument is prime or not. It is dependent on the isPrime() method.
+The main() method (described in the second half of the described algorithm) now simply has a job of
+checking whether the argument is prime or not. It is dependent on the isPrime() method.
 If the argument is prime, we are done.
-Else, it incrementally checks whether the integers above the argument is prime and outputs the first prime
-it reaches.
+Else, it incrementally checks whether the integers above the argument is prime and outputs the first
+prime it reaches.
 ```
 
 *(c) Very roughly, estimate how efficient your algorithm is: That is, look at
@@ -53,10 +53,10 @@ The best case would be if n <= 2, in which case the algorithm takes 1 time unit.
 The worst case would be if n is an m-digit number, n > 2, such that it is not prime and the next prime is k numbers
 away. In this case, the complexity would be O(1) + mO(m<sup>2</sup>) + (m-3)O(1) = O(m<sup>3</sup>+m)
 ```
-As you can see, I have no idea what I'm doing in this part of the question. However, I did learn more about
-the Big O notation and learned that algorithms have complexity. I am handing in this homework early because
-I want to go about learning about how to calculate algorithm complexity without having this homework looming
-over me.
+As you can see, I have no idea what I'm doing in this part of the question. However, I did learn more  
+about the Big O notation and learned that algorithms have complexity. I am handing in this homework
+early because I want to go about learning about how to calculate algorithm complexity without having
+this homework looming over me.
 ```
 
 # Exercise 1.2
