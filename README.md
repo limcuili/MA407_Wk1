@@ -38,7 +38,7 @@ Given an integer n taken from {-2147483648,...,0,1,2,3...,2147483647}:
 |       Operation                    |  Time  |        High-level explanation                      |
 |:---------------------------------- |:------:|:-------------------------------------------------- |
 | checking inequality                | O(1)             | I assume we just simply compare two numbers        |
-| adding 1 to a number               | O(1)             | add and carry are both single time unit operations |
+| adding 1 to a number               | O(1)             | Add and carry are both single time unit operations |
 | long division of 2 m-digit numbers | O(m<sup>2</sup>) | Refer to wikipedia; I'm trying to understand it.   |
 
 The best case would be if n <= 2, in which case the algorithm takes 1 time unit.
@@ -55,8 +55,6 @@ _Try to use a method (or several ones) other than the main method in your
 program. For this, single out parts of your program, which could naturally
 be encapsulated in a method._
 
-```
+
 To view my solution to this, kindly refer to the files in this repository.
 <sup>https://github.com/limcuili</sup>
-
-```
