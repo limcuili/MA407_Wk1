@@ -42,7 +42,7 @@ Given an integer n taken from {-2147483648,...,0,1,2,3...,2147483647}:
 | long division of 2 m-digit numbers | O(m<sup>2</sup>) | Refer to wikipedia; I'm trying to understand it.   |
 
 The best case would be if n <= 2, in which case the algorithm takes 1 time unit.
-The worst case would be if n is an m-digit number, n > 2, such that it is not prime and the next prime is k numbers away. In this case, the complexity would be O(1) + (/floor m/2 /rfloor)O(m<sup>2</sup>) + (m-3)O(1) = O(m<sup>3</sup>+m)
+The worst case would be if n is an m-digit number, n > 2, such that it is not prime and the next prime is k numbers away. In this case, the complexity would be O(1) + mO(m<sup>2</sup>) + (m-3)O(1) = O(m<sup>3</sup>+m)
 
 As you can see, I have no idea what I'm doing in this part of the question. However, I did learn more about the Big O notation and learned that algorithms have complexity. I am handing in this homework early because I want to go about learning about how to calculate algorithm complexity without having this homework looming over me.
 
