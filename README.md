@@ -19,7 +19,7 @@ If sending n as an argument of isPrime gives false, find closest prime >= n:
 ```
 
 *(b) Argue that your algorithm is correct.*  
-```
+
 Essentially, I am using the definition of prime numbers:  
   *a prime number is a number that is divisible only by itself and 1.*  
 My algorithm is correct up to Java's integer upper bound.  
@@ -28,12 +28,11 @@ For argument n > 2, the isPrime() method tries to divide n with every number bel
 The main() method (described in the second half of the described algorithm) now simply has a job of checking whether the argument is prime or not. It is dependent on the isPrime() method.  
 If the argument is prime, we are done.  
 Else, it incrementally checks whether the integers above the argument is prime and outputs the first prime it reaches.  
-```
 
 *(c) Very roughly, estimate how efficient your algorithm is: That is, look at
 the loops used in your algorithm and estimate roughly how many iterations in
 each loop your algorithm needs for a given number n.*  
-```
+
 Given an integer n taken from {-2147483648,...,0,1,2,3...,2147483647}:
 
 |       Operation                    |  Time  |        High-level explanation                      |
@@ -46,7 +45,7 @@ The best case would be if n <= 2, in which case the algorithm takes 1 time unit.
 The worst case would be if n is an m-digit number, n > 2, such that it is not prime and the next prime is k numbers away. In this case, the complexity would be O(1) + (/floor m/2 /rfloor)O(m<sup>2</sup>) + (m-3)O(1) = O(m<sup>3</sup>+m)
 
 As you can see, I have no idea what I'm doing in this part of the question. However, I did learn more about the Big O notation and learned that algorithms have complexity. I am handing in this homework early because I want to go about learning about how to calculate algorithm complexity without having this homework looming over me.
-```
+
 
 # Exercise 1.2
 
